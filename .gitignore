@@ -1,0 +1,36 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets & credentials
+*.env
+.env*
+**/auth*.json
+**/token*.json
+**/credentials*.json
+*.key
+*.pem
+
+# Personal data
+memory/
+MEMORY.md
+
+# Clawdbot internal
+.clawdhub/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cron backup (contains Telegram ID)
+cron-jobs-backup.json
+
+# Config backups (contain secrets!)
+backups/
+
+# Personal config (contains location data)
+immoweb-config.json

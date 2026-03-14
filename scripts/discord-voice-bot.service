@@ -1,0 +1,15 @@
+[Unit]
+Description=Discord Voice Bot for Rez
+After=network.target voice-agent.service
+
+[Service]
+Type=simple
+User=wouter
+WorkingDirectory=/home/wouter/clawd
+EnvironmentFile=/home/wouter/clawd/.env
+ExecStart=/usr/bin/python3 /home/wouter/clawd/scripts/discord-voice-bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
