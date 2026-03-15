@@ -13,7 +13,9 @@ __pycache__/
 *.pem
 
 # Personal data
-memory/
+memory/*
+!memory/README.md
+!memory/*.example
 MEMORY.md
 
 # Clawdbot internal
